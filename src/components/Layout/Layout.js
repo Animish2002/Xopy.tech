@@ -7,7 +7,7 @@ const Layout = () => {
   return (
     <div className="relative min-h-screen">
       <Header />
-      <main className="pt-10 pb-6">
+      <main className="pt-20 pb-6  mb-20 overflow-x-auto">
         <LandingPage />
       </main>
       <Footer />
