@@ -4,6 +4,7 @@ import SideImage from "../../Assets/landingPage1.png"; // Import your image file
 import Animish from "../../Assets/Animish.jpeg";
 import Anushka from "../../Assets/Anushka.jpeg";
 import Vrushabh from "../../Assets/Vrushabh.jpeg";
+import { StickyScrollRevealDemo } from "./StickyScrollRevealDemo";
 
 const LandingPage = () => {
   const [showTypewriter, setShowTypewriter] = useState(true);
@@ -19,7 +20,7 @@ const LandingPage = () => {
 
   return (
     <>
-      <div className="flex flex-col md:flex-row justify-center items-center px-6 mb-20 text-center md:grid md:grid-cols-2 gap-8">
+      <div className="flex flex-col md:flex-row justify-center items-center px-6 mb-20 mt-10 text-center md:grid md:grid-cols-2 gap-8">
         <div className="col-span-1 mb-8 md:mb-0">
           <h1 className="text-[25px] md:text-5xl font-bold">
             {showTypewriter ? (
@@ -131,7 +132,7 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-
+      <StickyScrollRevealDemo />
       <div className="flex justify-center text-2xl mt-16 mb-8">
         Meet the team
       </div>

@@ -34,3 +34,12 @@
     font-family: var(--font-body), sans-serif;
   }
   
+
+/* Hide scrollbar but allow scrolling for Webkit browsers */
+.element {
+  overflow: auto;
+}
+
+.element::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
