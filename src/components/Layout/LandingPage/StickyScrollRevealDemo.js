@@ -11,10 +11,10 @@ const content = [
     description:
       "Reduce human errors and interventions and say yes to a streamlined platform for facilitating safe and secure transfer.",
     content: (
-      <div className=" flex items-center justify-center text-white">
+      <div className="h-full w-full flex items-center justify-center text-white">
         <img
           src={image1}
-          className=" object-cover border-2 border-black rounded-[30px] "
+          className="h-full w-full object-cover border-2 border-black rounded-[30px] "
           alt="linear board demo"
         />
       </div>
@@ -50,10 +50,7 @@ const content = [
   },
 ];
 
-export const StickyScroll = ({
-  content,
-  contentClassName,
-}) => {
+export const StickyScroll = ({ content, contentClassName }) => {
   const [activeCard, setActiveCard] = useState(0);
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -77,12 +74,8 @@ export const StickyScroll = ({
     setActiveCard(closestBreakpointIndex);
   });
 
-  const backgroundColors = [
-    "white",
-  ];
-  const linearGradients = [
-    "",
-  ];
+  const backgroundColors = ["white"];
+  const linearGradients = [""];
 
   const [backgroundGradient, setBackgroundGradient] = useState(
     linearGradients[0]
@@ -97,7 +90,7 @@ export const StickyScroll = ({
       animate={{
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }}
-      className="h-[32rem] overflow-y-auto hide-scrollbar flex justify-center relative space-x-2 rounded-md "
+      className="h-[36rem] p-10 overflow-y-auto hide-scrollbar flex justify-center relative space-x-2 rounded-md "
       ref={ref}
     >
       <div className="relative flex items-start px-4">
