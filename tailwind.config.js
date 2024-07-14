@@ -13,14 +13,11 @@ module.exports = {
     boxShadow: {
       "3xl": "29px 17px 0px -3px rgb(253, 218, 13)",
       new: "17px 15px 0px 0px rgb(253, 218, 13)",
-      middle: "17px 15px 0px 0px rgb(253, 218, 13)",
+      middle: "17px 15px 0px 0px rgb(253, 218, 13)"
     },
     fontFamily: {
       heading: ["var(--font-heading)", ...fontFamily.sans],
       body: ["var(--font-body)", ...fontFamily.sans],
-    },
-    fontFamily: {
-      inter: ["Inter", "sans-serif"],
     },
   },
   plugins: [
