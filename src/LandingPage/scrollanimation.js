@@ -9,6 +9,7 @@ import XopyFeatures from "../components/Layout/LandingPage/XopyFeatures";
 import Team from "../components/Layout/LandingPage/Team";
 import Footer from "../components/Layout/Footer";
 import Header from "../components/Layout/Header";
+import Mission from "../components/Layout/LandingPage/Mission";
 const ScrollAnimation = () => {
   const containerRef = useRef(null);
 
@@ -41,7 +42,7 @@ const ScrollAnimation = () => {
       initContainer() {
         this.container.el.style.setProperty(
           "--stick-items",
-          `${this.sections.length + 4}00vh`
+          `${this.sections.length + 5}00vh`
         );
         this.container.el.classList.add("[&_*]:!transition-none");
         setTimeout(() => {
@@ -107,12 +108,13 @@ const ScrollAnimation = () => {
   return (
     <>
       <div className="relative font-inter antialiased">
-        <main className="relative  flex flex-col justify-center overflow-hidden supports-[overflow:clip]:overflow-clip mt-24">
-          <div className="h-[calc(100vh-6rem)] ">
+        <main className="relative flex flex-col justify-center overflow-hidden supports-[overflow:clip]:overflow-clip mt-24">
+          <div className="h-[calc(100vh-7rem)] ">
             <Header />
             <HeroSection />
+            <Mission />
           </div>
-          <div className="w-full max-w-6xl mx-auto px-4 md:px-6 py-24">
+          <div className="w-full max-w-6xl mx-auto px-4 md:px-6 py-28">
             <div
               className="max-w-md mx-auto lg:max-w-none md:min-h-[var(--stick-items)]"
               ref={containerRef}
@@ -125,9 +127,9 @@ const ScrollAnimation = () => {
                 ].map((title, index) => {
                   const images = [image1, image2, image3];
                   const newTexts = [
-                    "Reduce human errors and interventions and say yes to \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 a streamlined platform for facilitating \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 safe and secure transfer.",
-                    "The streamlined process reduces confusion and raises \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 the convenience.",
-                    "Adds an added layer of security to the traditional \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 methods with added convenience and \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 straightforward method.",
+                    "Reduce human errors and interventions and say yes to  a streamlined platform for facilitating safe and secure transfer.",
+                    "The streamlined process reduces confusion and raises the convenience.",
+                    "Adds an added layer of security to the traditional methods with added convenience and  straightforward method.",
                   ];
                   return (
                     <section
@@ -146,7 +148,7 @@ const ScrollAnimation = () => {
                                 height="4"
                               ></svg>
                             </div>
-                            <p className="text-lg text-gray-900">
+                            <p className="text-lg text-gray-900 text-pretty">
                               {newTexts[index]}
                             </p>
                           </div>
