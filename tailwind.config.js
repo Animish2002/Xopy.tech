@@ -19,9 +19,6 @@ module.exports = {
       heading: ["var(--font-heading)", ...fontFamily.sans],
       body: ["var(--font-body)", ...fontFamily.sans],
     },
-    fontFamily: {
-      inter: ["Inter", "sans-serif"],
-    },
   },
   plugins: [
     // rest of the code

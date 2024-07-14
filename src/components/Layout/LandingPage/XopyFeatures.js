@@ -2,7 +2,7 @@ import React from "react";
 
 const XopyFeatures = () => {
   return (
-    <div className="w-full md:h-[480px] h-auto md:p-0 py-6 bg-gray-100 flex flex-col items-center">
+    <div className="w-full md:h-[500px] h-auto md:p-0 py-6 bg-gray-100 flex flex-col items-center">
       <span className="text-base md:text-lg md:mt-10 mt-4 md:p-4">
         Key Features
       </span>

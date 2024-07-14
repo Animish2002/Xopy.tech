@@ -15,7 +15,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center px-6 mb-20 mt-10 text-center md:grid md:grid-cols-2 gap-8">
+    <div className="flex flex-col md:flex-row justify-center items-center px-6 mb-20 mt-10 text-center md:grid md:grid-cols-2 gap-8 pt-[22px]">
       <div className="col-span-1 mb-8 md:mb-0">
         <h1 className="text-[25px] md:text-5xl font-bold">
           {showTypewriter ? (
@@ -56,7 +56,7 @@ const HeroSection = () => {
         <img
           src={SideImage}
           alt="Xopy Image"
-          className="w-full md:w-[600px] rounded-3xl shadow-3xl"
+          className="w-full md:w-[650px] rounded-3xl shadow-3xl"
         />
       </div>
     </div>
