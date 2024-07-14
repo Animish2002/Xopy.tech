@@ -3,7 +3,7 @@ import Logo from "../../Assets/xopyLogo.png";
 
 const Header = () => {
   return (
-    <div className="fixed top-0 left-0 right-0 flex justify-between items-center flex-wrap p-4 bg-inherit bg-blend-screen">
+    <div className="fixed top-0 left-0 right-0 flex justify-between items-center flex-wrap p-4 ">
       <div className="flex items-center mb-4 md:mb-0">
         <img src={Logo} alt="Company Logo" className="h-18 w-32 md:ml-4" />
       </div>

@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
 /* Add this to your CSS file */
 .typing-animation {
     border-right: .15em solid orange;
