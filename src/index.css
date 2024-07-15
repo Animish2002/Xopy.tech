@@ -46,3 +46,24 @@ html {
 .element::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
 }
+
+
+.curved-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.curved-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 10px;
+  background: none;
+  border-radius: 50%;
+  border-bottom: 4px solid #D4B935;
+}
+* {
+  font-family: 'Roboto', sans-serif;
+}

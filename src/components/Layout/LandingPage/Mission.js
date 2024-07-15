@@ -10,7 +10,8 @@ const Mission = () => {
           <br />
           platform which will cut down your
           <br />
-          worries.
+          <span className="curved-underline"> worries.</span>
+         
         </p>
       </div>
     </div>

@@ -139,7 +139,7 @@ const ScrollAnimation = () => {
                       <div className="flex flex-col lg:h-full lg:flex-row space-y-4 space-y-reverse lg:space-y-0 lg:space-x-20">
                         <div className="flex-1 flex items-center lg:opacity-[var(--stick-visibility)] transition-opacity duration-300 order-1 lg:order-none">
                           <div className="space-y-3">
-                            <div className="relative inline-flex text-3xl font-bold text-indigo-500 ">
+                            <div className="relative inline-flex text-3xl font-bold text-grey-500 curved-underline ">
                               {title}
                               <svg
                                 className="fill-indigo-300 absolute top-full w-full"
