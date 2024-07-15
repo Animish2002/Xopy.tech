@@ -1,14 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Layout from "./components/Layout/Layout";
 
+
+import ScrollAnimation from "./LandingPage/scrollanimation";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Layout />} />
-        
+
+        <Route path="/" element={<ScrollAnimation />} />
       </Routes>
     </Router>
   );
